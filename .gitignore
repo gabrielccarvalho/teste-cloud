@@ -136,7 +136,7 @@ dist
 
 .temp
 
-tmp/app.db
+db/app.db
 
 # Docusaurus cache and generated files
 
