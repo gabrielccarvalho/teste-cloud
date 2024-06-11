@@ -13,7 +13,7 @@ export async function up(knex: Knex): Promise<void> {
 			.enum("priority", ["low", "normal", "high", "critical"])
 			.notNullable()
 			.defaultTo("normal");
-		table.boolean("completed").notNullable().defaultTo(false);
+		table.enum("status", ["todo", "done"]).notNullable().defaultTo("todo");
 		table.integer("evaluation_points").notNullable().defaultTo(0);
 		table.dateTime("due_date").notNullable().defaultTo(knex.fn.now());
 		table.timestamp("created_at").defaultTo(knex.fn.now());

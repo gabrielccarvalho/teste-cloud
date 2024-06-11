@@ -1,15 +1,10 @@
-# teste-cloud
+# teste cloud++
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
+How to install and run:
+- Clone the repository and install the dependencies using pnpm
 
 ```bash
-bun run index.ts
+  git clone https://github.com/gabrielccarvalho/teste-cloud.git && cd teste-cloud && pnpm install
 ```
 
-This project was created using `bun init` in bun v1.0.35. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+You are ready to go! 😃
